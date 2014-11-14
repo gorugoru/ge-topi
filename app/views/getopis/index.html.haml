@@ -1,0 +1,21 @@
+%h1 Listing getopis
+
+%table
+  %tr
+    %th Title
+    %th Description
+    %th
+    %th
+    %th
+
+  - @getopis.each do |getopi|
+    %tr
+      %td= getopi.title
+      %td= getopi.description
+      %td= link_to 'Show', getopi
+      %td= link_to 'Edit', edit_getopi_path(getopi)
+      %td= link_to 'Destroy', getopi, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Getopi', new_getopi_path

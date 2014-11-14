@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @getopi.title
+%p
+  %b Description:
+  = @getopi.description
+
+= link_to 'Edit', edit_getopi_path(@getopi)
+\|
+= link_to 'Back', getopis_path
