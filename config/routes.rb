@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  
+  root 'welcome#index'
+  get 'tos' => 'welcome#tos'
+  get 'policy' => 'welcome#policy'
+  get 'about' => 'welcome#about'
+
+  get 'test' => 'welcome#test'
   resources :getopis
 
   # The priority is based upon order of creation: first created -> highest priority.
