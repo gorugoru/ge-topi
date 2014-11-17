@@ -1,6 +1,13 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+  Mongoid.logger.level = Logger::DEBUG
+  Moped.logger.level = Logger::DEBUG
+
+  #ファイルにログを出力
+  Mongoid.logger = Logger.new("#{Rails.root}/log/mongoid_development.log")
+  Moped.logger   = Logger.new("#{Rails.root}/log/moped_development.log")
+  
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.

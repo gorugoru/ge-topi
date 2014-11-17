@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
-  
+
+  get 'register' => 'registrations#new'
+  post 'register' => 'registrations#create'
+
+  get 'login' => 'sessions#new'
+  post 'login' => 'sessions#create'
+  get 'me' => 'me#index'
+
   root 'welcome#index'
   get 'tos' => 'welcome#tos'
   get 'policy' => 'welcome#policy'
