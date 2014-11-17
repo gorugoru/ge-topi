@@ -1,5 +1,14 @@
 Rails.application.routes.draw do
 
+  namespace :admin do
+    root 'welcome#index'
+    get 'users' => 'users#index'
+    get 'users/:id' => 'users#show'
+    get 'users/:id/edit' => 'users#edit'
+    patch 'users/:id/edit' => 'users#update'
+    delete 'users/:id/' => 'users#update'
+  end
+
   get 'register' => 'registrations#new'
   post 'register' => 'registrations#create'
 

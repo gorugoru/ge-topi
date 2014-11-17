@@ -1,0 +1,6 @@
+%h2 
+  ユーザ編集
+
+= form_for @user, :url => {:controller => 'admin/users', :action => 'update' } do |f|
+  = f.text_field :email
+  = f.submit '更新'

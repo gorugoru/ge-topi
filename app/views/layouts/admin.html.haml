@@ -1,0 +1,14 @@
+!!!
+%html
+  %head
+    %title 管理画面 
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+%h1
+  管理画面
+    = render 'layouts/nav'
+    = render 'layouts/notice'
+    = yield
+    = render 'layouts/footer'
