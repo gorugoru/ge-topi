@@ -40,3 +40,4 @@ gem "mongoid", "~> 4.0.0"
 gem 'quiet_assets', '~> 1.0.2', group: :development
 gem 'sorcery'
 gem 'kaminari', '~> 0.15.1'
+gem "uikit-sass-rails"
