@@ -4,6 +4,8 @@ body {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  overfrow:auto;
+  min-width:980px;
 }
 
 p, ol, ul, td {
@@ -11,7 +13,9 @@ p, ol, ul, td {
   font-size: 13px;
   line-height: 18px;
 }
-
+.uk-container{
+width :100%;
+}
 #container {
   position: relative;
   height:100%;
@@ -19,7 +23,22 @@ p, ol, ul, td {
 #nav, #footer{
   color:#FFF;
   background-color:#000;
-  height:50px;
+  height:49px;
+  ul {
+    margin-left:15px;
+  }
+  a {
+    color:#FFF;
+    &:hover {
+     color:#777;
+    }
+    &:visited {
+      color:#777;
+    }
+  }
+}
+#nav {
+box-shadow:0 4px 5px #555;
 }
 footer {
   position: absolute;

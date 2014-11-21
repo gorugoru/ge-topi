@@ -1,14 +1,17 @@
-%ul#nav
-  %li
-    %a{'href'=>'/'}
-      %img{'src'=>'/app/assets/images/logo.png'}
-  %li
-    %a{'href'=>'/login'} ログイン
-  %li
-    %a{'href'=>'/register'} 登録
-  %li
-    %a{'href'=>'/me'} マイページ
-  %li
-    %a{'href'=>'/games'} ゲームタイトル追加
-  %li
-    %a{'href'=>'/admin/users'} ユーザ管理
+.uk-container
+  #nav.uk-grid
+    .uk-width-5-10
+      %a{"data-uk-offcanvas" => "", :href => "#my-id"}
+        %img{:src => "/assets/logo.png"}/
+    .uk-width-5-10
+      %ul
+        %li
+          %a{:href => "/login"} ログイン
+        %li
+          %a{:href => "/register"} 登録
+        %li
+          %a{:href => "/me"} マイページ
+        %li
+          %a{:href => "/games"} ゲームタイトル追加
+        %li
+          %a{:href => "/admin/users"} ユーザ管理
