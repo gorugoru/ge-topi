@@ -1,17 +1,21 @@
 .uk-container
   #nav.uk-grid
     .uk-width-5-10
-      %a{"data-uk-offcanvas" => "", :href => "#my-id"}
+      %a{:href => "#my-id"}
         %img{:src => "/assets/logo.png"}/
     .uk-width-5-10
-      %ul
-        %li
-          %a{:href => "/login"} ログイン
-        %li
-          %a{:href => "/register"} 登録
-        %li
-          %a{:href => "/me"} マイページ
-        %li
-          %a{:href => "/games"} ゲームタイトル追加
-        %li
-          %a{:href => "/admin/users"} ユーザ管理
+      %button.uk-button{"data-uk-offcanvas" => "{target:'#my-id'}"} menu
+    #my-id.uk-offcanvas
+      .uk-offcanvas-bar
+        .uk-panel
+          %ul
+            %li.uk-icon-gamepad
+              %a{:href => "/login"} ログイン
+            %li.uk-icon-gamepad
+              %a{:href => "/register"} 登録
+            %li.uk-icon-gamepad
+              %a{:href => "/me"} マイページ
+            %li.uk-icon-gamepad
+              %a{:href => "/games"} ゲームタイトル追加
+            %li.uk-icon-gamepad
+              %a{:href => "/admin/users"} ユーザ管理
