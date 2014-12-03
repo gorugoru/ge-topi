@@ -8,9 +8,9 @@
   %body
     = render 'layouts/notice'
     = render 'layouts/header'
-    #mein.uk-grid.uk-visible-medium
-      .uk-width-medium-1-4.uk-hidden-small.tm-sidebar
-      = render 'layouts/nav'
-      .uk-width-medium-3-4.tm-main
-      = yield
+    #mein.uk-grid
+      .uk-width-medium-1-4
+        = render 'layouts/nav'
+      .uk-width-medium-3-4
+        = yield
     = render 'layouts/footer'
