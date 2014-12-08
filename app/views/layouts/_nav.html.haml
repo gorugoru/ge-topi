@@ -15,20 +15,15 @@
     .uk-icon-gamepad
     %a{:href => "/admin/users"} ユーザ管理
 #my-id.uk-offcanvas
-  .uk-offcanvas-bar
-    %ul
-      %li
-        .uk-icon-gamepad
-        %a{:href => "/login"} ログイン
-      %li
-        .uk-icon-gamepad
-        %a{:href => "/register"} 登録
-      %li
-        .uk-icon-gamepad
-        %a{:href => "/me"} マイページ
-      %li
-        .uk-icon-gamepad
-        %a{:href => "/games"} ゲームタイトル追加
-      %li
-        .uk-icon-gamepad
-        %a{:href => "/admin/users"} ユーザ管理
+  .uk-offcanvas-bar.uk-navbar
+    %ul.uk-navbar-nav
+      %li.uk-parent
+        %a.uk-icon-gamepad{:href => "/login"} ログイン
+      %li.uk-parent
+        %a.uk-icon-gamepad{:href => "/register"} 登録
+      %li.uk-parent
+        %a.uk-icon-gamepad{:href => "/me"} マイページ
+      %li.uk-parent
+        %a.uk-icon-gamepad{:href => "/games"} ゲームタイトル追加
+      %li.uk-parent
+        %a.uk-icon-gamepad{:href => "/admin/users"} ユーザ管理
