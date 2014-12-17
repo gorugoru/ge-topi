@@ -5,7 +5,7 @@ width :100%;
   position: relative;
   height:100%;
 }
-#nav, #footer{
+#nav, footer{
   color:#FFF;
   background-color:#000;
   height:49px;
@@ -24,6 +24,7 @@ width :100%;
 }
 #nav {
 box-shadow:0 4px 5px #555;
+margin-bottom: 10px;
 }
 footer {
   position: absolute;
@@ -33,9 +34,9 @@ footer {
     margin:0;
     padding:0;
   }
+  li {
+    display: inline-block;
+    list-style:none;
+  }
 }
 
-#footer li {
-  display: inline-block;
-  list-style:none;
-}
